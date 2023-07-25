@@ -3,7 +3,7 @@
 #
 FROM maven:3.6.3-jdk-11-slim AS build
 COPY . .
-RUN mvn clean package demoCloud:demoCloud  -DskipTests
+RUN mvn clean package # demoCloud:demoCloud  -DskipTests
 
 #
 # Package stage
