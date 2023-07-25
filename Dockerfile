@@ -12,5 +12,5 @@ FROM openjdk:11
 COPY --from=build /target/demoCloud-0.0.1-SNAPSHOT.jar demo.jar
 # ENV PORT=8080
 EXPOSE 8081
-ENTRYPOINT ["java","-jar","demoCloud.jar"]
+ENTRYPOINT ["java","-jar","/demoCloud.jar"]
 
