@@ -15,7 +15,7 @@
 #ENTRYPOINT ["java","-jar","/demoCloud.jar"]
 
 FROM eclipse-temurin:17-jdk-alpine
-VOLUME /tmp
+#VOLUME /tmp
 COPY target/*.jar demoCloud.jar
 ENTRYPOINT ["java","-jar","/demoCloud.jar"]
 EXPOSE 8081
