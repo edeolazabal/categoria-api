@@ -1,14 +1,14 @@
 #
 # Build stage
 #
-FROM maven:3.6.3-jdk-11-openj9 AS build
+FROM openjdk:11 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
 #
 # Package stage
 #
-FROM openjdk:11-alpine
+FROM openjdk:11
 COPY --from=build /target/demoCloud-0.0.1-SNAPSHOT.jar demo.jar
 # ENV PORT=8080
 EXPOSE 8081
