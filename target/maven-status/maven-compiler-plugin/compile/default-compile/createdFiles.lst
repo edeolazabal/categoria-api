@@ -1,0 +1,5 @@
+com\upc\democloud\DemoCloudApplication.class
+com\upc\democloud\model\Categoria.class
+com\upc\democloud\repository\CategoriaRepository.class
+com\upc\democloud\controller\CategoriaController.class
+com\upc\democloud\servicio\CategoriaService.class
